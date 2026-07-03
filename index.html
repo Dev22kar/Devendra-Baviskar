@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUJAL FASHION & UPDATE (SFU)</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#081B4B,#0B2E83,#0F172A);
+    color:#fff;
+    min-height:100vh;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    align-items:center;
+    padding:15px 25px;
+    background:#fff;
+    color:#000;
+    border-bottom:4px solid #FFD700;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    height:90px;
+}
+
+.company{
+    flex:1;
+    padding-left:20px;
+}
+
+.company h1{
+    color:#D40000;
+    font-size:36px;
+}
+
+.company .tagline{
+    color:#0B2E83;
+    font-size:18px;
+    font-weight:600;
+}
+
+.company .sub{
+    color:#444;
+    font-size:15px;
+    margin-top:5px;
+}
+
+.datetime{
+    text-align:right;
+}
+
+#time{
+    font-size:42px;
+    font-weight:bold;
+    color:#0B2E83;
+}
+
+#date{
+    font-size:16px;
+    margin-top:5px;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:25px;
+}
+
+.hero h2{
+    color:#FFD700;
+    font-size:42px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    padding:20px;
+    padding-bottom:100px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#FFD700;
+    padding:12px;
+}
+
+.card p{
+    padding:0 12px 15px;
+}
+
+/* FOOTER */
+.footer{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#FFD700;
+    color:#000;
+    font-weight:bold;
+    overflow:hidden;
+    white-space:nowrap;
+    padding:10px;
+}
+
+.footer span{
+    display:inline-block;
+    padding-left:100%;
+    animation:scroll 25s linear infinite;
+}
+
+@keyframes scroll{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-100%);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+    <img src="NewSFU.png" class="logo">
+
+    <div class="company">
+        <h1>SUJAL FASHION & UPDATE (SFU)</h1>
+
+        <div class="tagline">
+            Authorized Uniform Manufacturers & Suppliers
+        </div>
+
+        <div class="sub">
+            School • College • Corporate • Hotel • Hospital • Industrial • Security • Customized Uniforms
+        </div>
+    </div>
+
+    <div class="datetime">
+        <div id="time"></div>
+        <div id="date"></div>
+    </div>
+
+</div>
+
+<div class="hero">
+    <h2>Premium Uniform Manufacturer</h2>
+    <p>
+        School • College • Corporate • Hotel • Hospital • Security • Industrial • Customized Uniforms
+    </p>
+</div>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="school_uniform.jpg.jfif">
+        <h3>School Uniforms</h3>
+        <p>Premium quality uniforms for schools.</p>
+    </div>
+
+    <div class="card">
+        <img src="college_uniform.jpg.jfif">
+        <h3>College Uniforms</h3>
+        <p>Modern and comfortable college uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="corporate_uniform.jpg.jfif">
+        <h3>Corporate Uniforms</h3>
+        <p>Executive and office dress solutions.</p>
+    </div>
+
+    <div class="card">
+        <img src="1 (1).jfif">
+        <h3>Hotel Uniforms</h3>
+        <p>Reception, housekeeping and hotel staff uniforms.</p>
+    </div>
+
+   <div class="card">
+        <img src="1 (5).jfif">
+        <h3>Hotel Uniforms</h3>
+        <p>Reception, housekeeping and hotel staff uniforms.</p>
+    </div>
+
+   <div class="card">
+        <img src="1 (6).jfif">
+        <h3>Hotel Uniforms</h3>
+        <p>Reception, housekeeping and hotel staff uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="1 (3).jfif">
+        <h3>Chef Uniforms</h3>
+        <p>Professional chef and kitchen uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="1 (4).jfif">
+        <h3>Restaurant Uniforms</h3>
+        <p>Waiter, waitress and service staff uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="hospital_uniform.jpg.jfif">
+        <h3>Doctor Uniforms</h3>
+        <p>Medical and healthcare uniforms.</p>
+    </div>
+
+
+    <div class="card">
+        <img src="hospital_uniform (1).jfif">
+        <h3>Doctor Uniforms</h3>
+        <p>Medical and healthcare uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="hospital_uniform (2).jfif">
+        <h3>Nurse Uniforms</h3>
+        <p>Comfortable nursing staff uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="hospital_uniform (3).jfif">
+        <h3>Nurse Uniforms</h3>
+        <p>Comfortable nursing staff uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="hospital_uniform (3).jfif">
+        <h3>Nurse Uniforms</h3>
+        <p>Comfortable nursing staff uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="hospital_uniform (4).jfif">
+        <h3>Nurse Uniforms</h3>
+        <p>Comfortable nursing staff uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="security_uniform.jpg.jfif">
+        <h3>Security Uniforms</h3>
+        <p>Professional guard and supervisor uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="security_uniform.jpg (2).jfif">
+        <h3>Security Uniforms</h3>
+        <p>Professional guard and supervisor uniforms.</p>
+    </div>
+    
+    <div class="card">
+        <img src="security_uniform.jpg (3).jfif">
+        <h3>Security Uniforms</h3>
+        <p>Professional guard and supervisor uniforms.</p>
+    </div>
+
+       <div class="card">
+        <img src="hospital_uniform (3).jfif">
+        <h3>Industrial Uniforms</h3>
+        <p>Factory and industrial workwear solutions.</p>
+    </div>
+
+    <div class="card">
+        <img src="hospital_uniform (4).jfif">
+        <h3>Workshop Uniforms</h3>
+        <p>Workshop and maintenance uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="bpcl.jfif">
+        <h3>Petrol Pump Uniforms</h3>
+        <p>BPCL station uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="hpcl.jfif">
+        <h3>Petrol Pump Uniforms</h3>
+        <p>HPCL station uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="iocl g.jfif">
+        <h3>Petrol Pump Uniforms</h3>
+        <p>IOCL station uniforms.</p>
+    </div>
+
+    <div class="card">
+        <img src="IOCL.jfif">
+        <h3>Petrol Pump Uniforms</h3>
+        <p>IOCL station uniforms.</p>
+    </div>
+</div>
+
+<div class="footer">
+<span>
+SUJAL FASHION & UPDATE • SCHOOL • COLLEGE • CORPORATE • HOTEL • HOSPITAL • SECURITY • INDUSTRIAL • PETROL PUMP • CUSTOMIZED UNIFORMS • BULK ORDERS ACCEPTED • CONTACT: +91 7972306526
+</span>
+</div>
+
+<script>
+function updateDateTime(){
+
+    const now = new Date();
+
+    document.getElementById("time").innerHTML =
+        now.toLocaleTimeString('en-IN');
+
+    document.getElementById("date").innerHTML =
+        now.toLocaleDateString('en-IN',{
+            weekday:'long',
+            day:'numeric',
+            month:'long',
+            year:'numeric'
+        });
+}
+
+updateDateTime();
+setInterval(updateDateTime,1000);
+</script>
+
+</body>
+</html>
